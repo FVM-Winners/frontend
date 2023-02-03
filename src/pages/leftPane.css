@@ -15,6 +15,19 @@
     justify-content: space-between;
 }
 
+.rightPane{
+    width: 80%;
+    min-height: 100%;
+}
+
+.structure{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
 .swap{
     background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), linear-gradient(97.78deg, #018D7B -4.83%, #0D7C8D 53.32%, #0082BE 105.71%);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
@@ -31,5 +44,63 @@ button{
     border: none;
     outline: none;
     margin: auto;
+    border-radius: 20px;
     cursor: pointer;
+}
+
+.ion-page{
+    background-color: #1D2230;
+}
+
+.stuff{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.stuffandar{
+    background: #1C2835;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border: 2px solid;
+    margin: 1rem;
+    border-image: linear-gradient(#018D7B,#007EB9) 27;
+}
+
+.wallet{
+    background-color: #253140;
+    border: 0.25px solid;
+    border-color: #FFFFFF;
+    height: 50%;
+    width: 30%;
+    float: right;
+    font-size: 2.5rem;
+    align-self: center;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.wallet:hover{
+    background-color: #1C2835;
+    border: 2px solid;
+    border-color: #FFFFFF;
+}
+
+.heading{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1.75rem;
+    color: rgba(256, 256, 256, 0.6);
+    margin: 1rem;
+}
+
+.metamask{
+    font-size: 2.5rem;
+    color: #FFFFFF;
 }
