@@ -5,12 +5,9 @@ import {
   IonRouterOutlet,
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import DashBoard from './pages/Dashboard';
-import Home from './pages/index';
-import Swap from './pages/swap';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
-
+import Home from './pages';
 /* Basic CSS for apps built with Ionic */
 import '@ionic/react/css/normalize.css';
 import '@ionic/react/css/structure.css';
@@ -26,6 +23,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import './pages/leftPane.css'
 
 /* Global CSS */
 import './global.css';
@@ -34,9 +32,7 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
         <IonRouterOutlet>
-          <Route path="/dashboard" component={DashBoard} exact={true} />
           <Route path="/"  component={Home} exact={true} />
-          <Route path="/swap" component={Swap} exact={true} />
         </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

@@ -1,15 +1,14 @@
 import React from 'react';
-import { IonButton, IonContent, IonPage, IonItem} from '@ionic/react';
-import './Dashboard.css';
-
+import {IonPage} from '@ionic/react';
+import LeftPane from '../components/leftPane';
 const Home: React.FC = () => {
   return (
     <IonPage>
-      <IonContent>
-      <IonItem routerLink="/dashboard">
-              <IonButton>DashBoard</IonButton>
-          </IonItem>
-      </IonContent>
+      <div className="leftPane">
+        <LeftPane />
+      </div>
+      <div className="rightPane"> 
+      </div>
     </IonPage>
   );
 };
