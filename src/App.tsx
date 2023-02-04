@@ -27,12 +27,19 @@ import './pages/leftPane.css'
 
 /* Global CSS */
 import './global.css';
+import swap from './pages/swap';
+import borrow from './pages/borrow';
+import Deposite from './pages/deposite';
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
         <IonRouterOutlet>
           <Route path="/"  component={Home} exact={true} />
+          <Route path="/swap"  component={swap} exact={true} />
+          <Route path="/borrow"  component={borrow} exact={true} />
+          <Route path="/deposite"  component={Deposite} exact={true} />
+
         </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

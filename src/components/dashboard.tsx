@@ -3,7 +3,13 @@ import React from 'react';
 
 const Dashboard: React.FC<{Desposited:string,
 Balance: string, 
-Borrowed: string}> = ({Desposited, Balance, Borrowed}) => {
+Borrowed: string,
+// array: {
+//     id: string,
+//     ethval: number,
+//     usdval: number, 
+// }[]
+}> = ({Desposited, Balance, Borrowed}) => {
   return (
     <div className='dashboard'>
         <div className="wallet">
@@ -27,7 +33,7 @@ Borrowed: string}> = ({Desposited, Balance, Borrowed}) => {
                     {Desposited}
                 </div>
             </div>
-            <div className='stuffandar'>
+            <div className='stuffandar-balance'>
                 <div>
                     Balance
                 </div>
@@ -44,6 +50,18 @@ Borrowed: string}> = ({Desposited, Balance, Borrowed}) => {
                     </div>
             </div>
         </div>
+        {/* <div className="link">
+            <a href="#">View History &gt;&gt;</a>
+        </div>
+        <div className="assets">
+            <div className="assets-heading">
+                <div>
+                    Defi Assets
+                </div>
+                <div>
+                </div>
+            </div>
+        </div> */}
     </div>
   );
 };
