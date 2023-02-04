@@ -23,7 +23,7 @@ Borrowed: string,
             <button className='metamask' onClick={enableEthereum}>Connect MetaMask Wallet +</button>
             </div> 
             <div className="wallet2">
-            <button className='metamask' onClick={enableEthereum}>Connected</button>
+            <button className='metamask'>Connected</button>
             </div> 
         </div>
     }

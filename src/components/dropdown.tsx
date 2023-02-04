@@ -10,7 +10,7 @@ const Dropdown: React.FC<{
     return (
         <div className='dropdown'>
             <div className="ethval">
-                <input type="number" placeholder="0.00" name={Name}/>
+                <input type="number" placeholder="0.00" id="token"/>
             </div>
             <div className="ethdropdown">
                 <select name="tokentype" style={{
