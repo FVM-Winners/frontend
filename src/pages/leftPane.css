@@ -25,6 +25,7 @@
     min-height: 100%;
 }
 .centerPane{
+    background-color: #191D28;
     display: flex;
     align-items: center;
     width: 40%;
@@ -170,10 +171,10 @@ button{
 }
 
 .swapbutton{
+    margin-top: 2rem;
     width: 22.25rem;
     height: 4rem; 
-    font-family: 'Roboto';
-    font-style: normal;
+   font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 28px;
@@ -184,11 +185,88 @@ button{
     padding-left: 9rem;
 }
 
-.form{
+form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: row;
+    width: 22.25rem;
+    height: 4rem;
+    background: #253140;
+    border-radius: 8px;
+
+}
+
+.dropdown input{
+    background: transparent;
+    border: none;
+    color: aliceblue;
+    font-family: 'Roboto';
+    font-style: normal;
+    padding-left: 1.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.1875rem;    
+}
+
+.dropdown input:active{
+    background: transparent;
+    border: none;
+    color: aliceblue;
+    font-family: 'Roboto';
+    font-style: normal;
+    padding-left: 1.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.1875rem;    
+}
+
+.ethval{
+    display: flex;
+    width:13.5rem;
+}
+
+option{
+    margin: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(4, 138, 127, 0.5);
+    border-radius: 4px;   
+
+}
+
+select-selected{
+    margin: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(4, 138, 127, 0.5);
+    border-radius: 4px; 
+    color: white 
+   
+
+}
+
+.centerstuff{
+    margin:auto;
+}
+
+.ethdropdown{
+    align-self: center;
 }
