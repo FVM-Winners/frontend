@@ -10,11 +10,23 @@ Borrowed: string,
 //     usdval: number, 
 // }[]
 }> = ({Desposited, Balance, Borrowed}) => {
+    const enableEthereum = async () => {
+        await ethereum.request({ method: 'eth_requestAccounts' });
+        document.getElementsByClassName('wallet1')[0].style.display = 'none';
+        document.getElementsByClassName('wallet2')[0].style.display = 'flex';
+    }
   return (
     <div className='dashboard'>
-        <div className="wallet">
-            <button className='metamask'>Connect MetaMask Wallet +</button>
-        </div> 
+    if(window.ethereum !== undefined){
+        <div>
+            <div className="wallet1">
+            <button className='metamask' onClick={enableEthereum}>Connect MetaMask Wallet +</button>
+            </div> 
+            <div className="wallet2">
+            <button className='metamask' onClick={enableEthereum}>Connected</button>
+            </div> 
+        </div>
+    }
         <br/>
         <br/>
         <br/>
