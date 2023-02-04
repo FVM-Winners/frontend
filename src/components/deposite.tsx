@@ -16,22 +16,20 @@ const Deposit: React.FC<{}> = () => {
     return (
         <div className="centerstuff">
         <div className='heading'>
-                Deposite
-            </div>
-            <br/><br/><br/>
-            <div className='swapform'>
-            <div className='swapdiv'>
-            
-                <form>
-                <Dropdown array={array} Name="token"/>
-
-                    <button className='swapbutton'>
-                        Deposit
-                    </button>
-                </form>
-            </div>    
-            </div>
-        </div>
+        Deposit
+    </div>
+    <div className='swapdiv'>
+    <br/><br/><br/>
+    <div className='swapform'>
+        <form>
+            <Dropdown array={array} Name="token"/>
+            <button className='swapbutton'>
+                Deposit
+            </button>
+        </form>
+    </div>    
+    </div>
+</div>
 )}
 
 export default Deposit
