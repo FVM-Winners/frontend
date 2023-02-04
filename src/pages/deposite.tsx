@@ -2,7 +2,7 @@ import React from 'react';
 import {IonPage} from '@ionic/react';
 import LeftPane from '../components/leftPane';
 import Dashboard from '../components/dashboard';
-import Deposit from '../components/deposite';
+import Mint from '../components/deposite';
 const Deposite: React.FC = () => {
   return (
     <IonPage>
@@ -11,7 +11,7 @@ const Deposite: React.FC = () => {
         <LeftPane />
       </div>
       <div className="centerPane">
-        <Deposit/>
+        <Mint/>
       </div>
       <div className="nonindexrightPane">
         <Dashboard Desposited='$40' Balance='$20' Borrowed='$40'/> 

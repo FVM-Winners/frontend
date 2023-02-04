@@ -1,7 +1,7 @@
 import React from 'react';
 import Dropdown from './dropdown';
-
-const Deposit: React.FC<{}> = () => {
+import {ethers} from 'ethers';
+const Mint: React.FC<{}> = () => {
     var array=[
         {
             token: 'ETH',
@@ -13,18 +13,22 @@ const Deposit: React.FC<{}> = () => {
             token: 'Token3',
         },
     ]
+    const mintfunction() = async () => {  
+        console.log("Mint function called");
+    }
+
     return (
         <div className="centerstuff">
         <div className='heading'>
-        Deposit
+        Mint
     </div>
     <div className='swapdiv'>
     <br/><br/><br/>
     <div className='swapform'>
         <form>
             <Dropdown array={array} Name="token"/>
-            <button className='swapbutton'>
-                Deposit
+            <button className='swapbutton' onClick={mintfunction()}>
+                Mint
             </button>
         </form>
     </div>    
@@ -32,4 +36,4 @@ const Deposit: React.FC<{}> = () => {
 </div>
 )}
 
-export default Deposit
+export default Mint
