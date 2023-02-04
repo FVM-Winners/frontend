@@ -7,7 +7,7 @@ Borrowed: string}> = ({Desposited, Balance, Borrowed}) => {
   return (
     <div className='dashboard'>
         <div className="wallet">
-            <button className='metamask'>Connect MetaMask Wallet</button>
+            <button className='metamask'>Connect MetaMask Wallet +</button>
         </div> 
         <br/>
         <br/>
@@ -20,25 +20,30 @@ Borrowed: string}> = ({Desposited, Balance, Borrowed}) => {
         <div className='stuff'>
                     
             <div className='stuffandar'>
-                <button>
-                    Desposited <br/>
+                <div>
+                    Desposited 
+                </div>
+                <div className='stuffval'>
                     {Desposited}
-                </button>
+                </div>
             </div>
-            <div className="stuffborder">
-                <button>
-                    Balance <br/>
+            <div className='stuffandar'>
+                <div>
+                    Balance
+                </div>
+                <div className='stuffval'>
                     {Balance}
-                </button>
+                </div>
             </div>
-            <div className="stuffborder">
-                <button>
-                    Borrowed <br/>
-                    {Borrowed}
-                </button>
+            <div className='stuffandar'>
+                    <div>
+                        Borrowed
+                    </div> 
+                    <div className='stuffval'> 
+                        {Borrowed}
+                    </div>
             </div>
         </div>
-
     </div>
   );
 };
