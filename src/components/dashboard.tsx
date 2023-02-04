@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Tranhistory from './trhist';
 
 const Dashboard: React.FC<{Desposited:string,
 Balance: string, 
@@ -17,7 +17,6 @@ Borrowed: string,
     }
   return (
     <div className='dashboard'>
-    if(window.ethereum !== undefined){
         <div>
             <div className="wallet1">
             <button className='metamask' onClick={enableEthereum}>Connect MetaMask Wallet +</button>
@@ -26,7 +25,6 @@ Borrowed: string,
             <button className='metamask'>Connected</button>
             </div> 
         </div>
-    }
         <br/>
         <br/>
         <br/>
@@ -62,18 +60,7 @@ Borrowed: string,
                     </div>
             </div>
         </div>
-        {/* <div className="link">
-            <a href="#">View History &gt;&gt;</a>
-        </div>
-        <div className="assets">
-            <div className="assets-heading">
-                <div>
-                    Defi Assets
-                </div>
-                <div>
-                </div>
-            </div>
-        </div> */}
+        <Tranhistory/>
     </div>
   );
 };
