@@ -20,6 +20,7 @@ const Home: React.FC = () => {
   //     "usdval":300
   //   },
   // ]
+  globalThis.meta = false;
   return (
     <IonPage>
     <div className='structure'>

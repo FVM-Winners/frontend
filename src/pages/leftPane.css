@@ -141,7 +141,7 @@ button{
     align-self: center;
     color: #FFFFFF;
     margin: 3rem;
-    display: none;
+    display: flex;
 }
 
 .wallet1:hover{
@@ -158,6 +158,8 @@ button{
     line-height: 1.75rem;
     color: rgba(256, 256, 256, 0.6);
     margin-bottom: 2rem;
+    margin-left: 1rem;
+
 }
 
 .metamask{
@@ -215,7 +217,7 @@ form{
     height: 4rem;
     background: #253140;
     border-radius: 8px;
-
+    margin: auto;
 }
 
 .dropdown input{
@@ -228,6 +230,7 @@ form{
     font-weight: 600;
     font-size: 2rem;
     line-height: 1.1875rem;    
+    margin-left: auto;
 }
 
 .dropdown input:active{
